@@ -12,7 +12,7 @@
     "sass",
     "browsersync"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/muditjaingit/mwh",
   "ignore": [
     "**/.*",
     "node_modules",
