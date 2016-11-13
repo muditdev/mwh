@@ -1,2 +1,17 @@
 // fonts
 $primary-font: 'Josefin Sans', sans-serif;
+
+// sizes
+$header-padding: 0px;
+$top-header-height: 100px;
+$header-banner-height: calc(100vh - 100px);
+
+// colors
+
+$main-yellow: #fffcb6;
+$default-link-color: #fd8a80;
+
+$dark-blue: #566270;
+$gray: #888888;
+
+$mobile: new-breakpoint(max-width 500px 4);

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -669,9 +668,227 @@ template {
 
 /* Literal.Number.Integer.Long */
 /*josfin sans font family local*/
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/JosefinSans-Thin.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/JosefinSans-Light.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/JosefinSans-Regular.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/JosefinSans-SemiBold.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/JosefinSans-Bold.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 100;
+  src: url("../fonts/JosefinSans-ThinItalic.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/JosefinSans-LightItalic.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/JosefinSans-Italic.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/JosefinSans-SemiBoldItalic.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/JosefinSans-BoldItalic.woff") format("woff");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
 /*josfin sans font family ends*/
+:root {
+  font-size: 16px; }
+
 body {
   background: white;
   font-family: "Josefin Sans", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: #fd8a80;
+  font-size: 1em; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+figure {
+  margin: 0; }
+
+p {
+  line-height: 1.5; }
+
+.logo {
+  background: #fffcb6;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  padding-top: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  overflow: hidden; }
+
+nav.main-nav li {
+  display: inline-block;
+  padding: 10px 20px; }
+  nav.main-nav li a {
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: .8px;
+    color: #566270;
+    position: relative; }
+    nav.main-nav li a:before {
+      content: '';
+      display: none;
+      width: 100%;
+      background: #fffcb6;
+      height: 4px;
+      position: absolute;
+      top: .65em;
+      z-index: -1; }
+    nav.main-nav li a:hover {
+      color: gray; }
+      nav.main-nav li a:hover:before {
+        display: inline-block; }
+
+header.main-header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  header.main-header::after {
+    clear: both;
+    content: "";
+    display: block; }
+  header.main-header .top-header {
+    position: relative; }
+  header.main-header nav.main-nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0; }
+
+section.home-intro {
+  height: -webkit-calc(100vh - 100px);
+  height: calc(100vh - 100px);
+  position: relative; }
+  section.home-intro .intro-wrap {
+    width: 100%;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    section.home-intro .intro-wrap::after {
+      clear: both;
+      content: "";
+      display: block; }
+  section.home-intro figure.myAvtar {
+    text-align: center;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    section.home-intro figure.myAvtar:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      section.home-intro figure.myAvtar {
+        width: 100%; } }
+    section.home-intro figure.myAvtar img {
+      width: 100%;
+      max-width: 250px; }
+  section.home-intro .intro-content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    section.home-intro .intro-content:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 500px) {
+      section.home-intro .intro-content {
+        width: 100%; } }
+  section.home-intro button {
+    border: 1px solid #076fe4;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 0 #8ebcf1;
+            box-shadow: inset 0 1px 0 0 #8ebcf1;
+    color: white;
+    display: inline-block;
+    font-size: inherit;
+    font-weight: bold;
+    background-color: #4294f0;
+    background-image: -webkit-linear-gradient(#4294f0, #0776f3);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#4294f0), to(#0776f3));
+    background-image: linear-gradient(#4294f0, #0776f3);
+    padding: 7px 18px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #0065d6;
+    background-clip: padding-box; }
+    section.home-intro button:hover:not(:disabled) {
+      background-color: #2f87ea;
+      background-image: -webkit-linear-gradient(#2f87ea, #086fe3);
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#2f87ea), to(#086fe3));
+      background-image: linear-gradient(#2f87ea, #086fe3);
+      -webkit-box-shadow: inset 0 1px 0 0 #60a2ec;
+              box-shadow: inset 0 1px 0 0 #60a2ec;
+      cursor: pointer; }
+    section.home-intro button:active:not(:disabled), section.home-intro button:focus:not(:disabled) {
+      border: 1px solid #076fe4;
+      -webkit-box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3;
+              box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3; }
+    section.home-intro button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5; }
 
 /*# sourceMappingURL=main.css.map */

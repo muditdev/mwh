@@ -1,1 +1,44 @@
 @import "buttons";
+
+// logo
+.logo{
+  background: $main-yellow;
+  border-radius: 50%;
+  padding-top: 10px;
+  box-sizing: border-box;
+  @include size(100px);
+  overflow: hidden;
+}
+
+// navigation
+nav.main-nav{
+  li{
+    display: inline-block;
+    padding: 10px 20px;
+    a{
+      font-size: 1.1em;
+      font-weight: 700;
+      letter-spacing: .8px;
+      color: $dark-blue;
+      position: relative;
+      &:before{
+        content: '';
+        display: none;
+        width: 100%;
+        background: $main-yellow;
+        height: 4px;
+        position: absolute;
+        top: .65em;
+        z-index: -1;
+      }
+      &:hover{
+        color: gray;
+        &:before{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+//title headings
