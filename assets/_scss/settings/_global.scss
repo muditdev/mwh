@@ -22,3 +22,13 @@ figure{
 p{
   line-height: 1.5;
 }
+
+span[class^="Ico-"]{
+  @include size($default-icons-size);
+  display: inline-block;
+  svg{
+    @include size(100%);
+    fill: $default-icon-fill;
+  }
+  
+}

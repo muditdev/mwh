@@ -762,6 +762,15 @@ figure {
 p {
   line-height: 1.5; }
 
+span[class^="Ico-"] {
+  height: 50px;
+  width: 50px;
+  display: inline-block; }
+  span[class^="Ico-"] svg {
+    height: 100%;
+    width: 100%;
+    fill: #566270; }
+
 .logo {
   background: #fffcb6;
   -webkit-border-radius: 50%;
