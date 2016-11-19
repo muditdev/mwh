@@ -47,6 +47,37 @@
 }
 
 
+a.link-more{
+  text-align: center;
+  transition: all .5s ease;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: $default-link-color;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
+  &:after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: currentColor;
+    margin: auto;
+    margin-top: 10px;
+    transition: all .5s;
+  }
+  &:hover{
+    letter-spacing: 1.5px;
+    &:after{
+      width: 30px;
+      // animation: line-resize 2s linear infinite;
+    }
+  }
+}
+
+
+
 
 
 

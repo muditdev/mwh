@@ -64,3 +64,65 @@ nav.main-nav{
   }
 
 }
+
+
+//projects
+
+.projects{
+  .project{
+    margin: 16px 0;
+    background: yellow;
+    width: 100%;
+    @include row();
+    text-align: center;
+    height: 500px;
+    background: $projColor1;
+    .col{
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      @include span-columns(6);
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+    }
+    .proj-des{
+      @include both-center();
+      width: 75%;
+      max-width: 375px;
+      min-width: 285px;
+      h3.title{
+        color: $proj-title-color;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.25em;
+        margin: 0 0 20px 0;
+      }
+      .des{
+        color: $black;
+        letter-spacing: 1.5px;
+        font-size: .98em;
+        a{
+          color: $black;
+        }
+      }
+
+    }
+    .proj-img{
+
+    }
+    .proj-img.web{
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 360px;
+      width: 80%;
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}

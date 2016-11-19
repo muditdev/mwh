@@ -1,6 +1,9 @@
 // fonts
 $primary-font: 'Josefin Sans', sans-serif;
 
+// breakpoint
+$mobile: new-breakpoint(max-width 600px);
+
 // sizes
 $header-padding: 0px;
 $top-header-height: 100px;
@@ -15,9 +18,9 @@ $dark-blue: #566270;
 $gray: #888888;
 $pgray: #7a7a7a;
 $yellow: #d8cf00;
-
-// breakpoint
-$mobile: new-breakpoint(max-width 500px 4);
+$projColor1: #fffcb6;
+$black: #000;
+$proj-title-color: $black;
 
 // icon
 

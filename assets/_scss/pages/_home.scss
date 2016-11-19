@@ -72,3 +72,11 @@ section.welcome{
     }
   }
 }
+
+
+//projects
+
+section.proj-container{
+  @include outer-container();
+  margin-top: 35px;
+}
