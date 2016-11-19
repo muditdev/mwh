@@ -34,7 +34,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
         server: {
             baseDir: '_site'
         },
-        port: 8081,
+        // port: 8081,
         notify: false
     });
 });
@@ -62,10 +62,10 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('assets/_scss/**/*.*', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html','_includes/*.html','_posts/*'], ['jekyll-rebuild']);
     //js files
     gulp.watch('app/**/*.js', ['jekyll-rebuild']);
-}); 
+});
 
 /**
  * Default task, running just `gulp` will compile the sass,

@@ -42,3 +42,25 @@ nav.main-nav{
 }
 
 //title headings
+.bg-heading{
+  text-align: center;
+  position: relative;
+  &:before{
+    content: attr(data-bg-heading);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -75px;
+    font: {
+      size: 7em;
+      weight: 700;
+    }
+    color: rgba(#888888, .075);
+    z-index: -1;
+    @include media($mobile) {
+      font-size: 4em;
+      top: -50px;
+    }
+  }
+
+}

@@ -1,0 +1,58 @@
+.btn{
+  display: inline-block;
+  background: transparent;
+  border: none;
+  font: {
+    family: $primary-font;
+    size: 1.125em;
+    weight: 600;
+  }
+  outline: 0!important;
+  cursor: pointer;
+  transition: all .35s ease;
+}
+
+
+.btn--icon-1{
+  box-shadow: 0 0 0 2px $dark-blue inset;
+  color: $dark-blue;
+  border-radius: 150px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  padding: 0 30px 0 65px;
+  letter-spacing: 1px;
+  span.icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $dark-blue;
+    border-radius: 50%;
+    transition: all .2s ease;
+    svg{fill: #fff; width: 25px;}
+  }
+  &:hover{
+    background: $dark-blue;
+    color: #fff;
+    box-shadow: none;
+    span.icon{
+      animation: rotation 2s linear infinite ;
+      box-shadow: 0 0 0 2px $dark-blue;
+      background: #fff;
+      svg{
+        fill: $dark-blue;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@keyframes rotation {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.08)}
+  100%{transform: scale(1)}
+}

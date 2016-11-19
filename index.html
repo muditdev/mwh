@@ -3,7 +3,7 @@ layout: mwh
 title: Mudit Jain | designer, developer, thinker
 ---
 <header class="main-header">
-  <div class="top-header">
+  <div class="top-header"><!--top header starts -->
     <div class="branding">
       <div class="logo">
         <img src="{{site.baseurl}}assets/svg/myavtar.svg" alt="">
@@ -17,9 +17,9 @@ title: Mudit Jain | designer, developer, thinker
         <li><a href="">shop</a></li>
       </ul>
     </nav>
+ </div><!--top header ends -->
 
-  </div>
-  <section class="home-intro">
+  <section class="home-intro"><!--home intro starts -->
     <div class="intro-wrap">
       <figure class="myAvtar">
         <img src="{{site.baseurl}}assets/svg/myavtar.svg" alt="" />
@@ -31,23 +31,25 @@ title: Mudit Jain | designer, developer, thinker
           I'm mudit jain, a 21-year-old indian Front-end developer. I'm a weird guy who likes making weird things with web technologies. <br>
           I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.
         </p>
-        <button type="button" class="btn btn-icon">view profile</button>
+
+        <button class="btn btn--icon-1">
+          <span class="Ico-profile icon">
+           <svg>
+             <use xlink:href="{{site.baseurl}}assets/svg/sprite.svg#profileIco" />
+           </svg>
+          </span>
+          view profile</button>
       </div>
     </div>
-  </section>
+  </section><!--home intro ends -->
 </header>
 
 
 <main class="main-content">
-  main-content
-  <span class="Ico-profile">
-    <svg>
-      <use xlink:href="{{site.baseurl}}assets/svg/sprite.svg#profileIco" />
-    </svg>    
-  </span>
+  {% include home_main_content.html %}
 
 </main>
 
-<footer class="main-footer">
+<footer class="main-footer" style="height:2000px">
   main-footer
 </footer>
