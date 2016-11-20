@@ -62,7 +62,6 @@ nav.main-nav{
       top: -50px;
     }
   }
-
 }
 
 
@@ -70,20 +69,20 @@ nav.main-nav{
 
 .projects{
   .project{
-    margin: 16px 0;
-    background: yellow;
+    margin: 20px 0;
     width: 100%;
-    @include row();
+    @include row;
     text-align: center;
-    height: 500px;
+    // height: 500px;
     background: $projColor1;
     .col{
-      height: 100%;
+      height: 500px;
       position: relative;
       overflow: hidden;
       @include span-columns(6);
       @include media($mobile) {
         @include span-columns(12);
+        height: 420px;
       }
     }
     .proj-des{
@@ -109,9 +108,6 @@ nav.main-nav{
 
     }
     .proj-img{
-
-    }
-    .proj-img.web{
       position: absolute;
       bottom: -20px;
       left: 50%;
@@ -122,6 +118,52 @@ nav.main-nav{
       overflow: hidden;
       img{
         width: 100%;
+      }
+      &.middle{
+        @include both-center;
+        bottom: auto;
+      }
+    }
+  }
+}
+
+// products
+.products{
+  @include clearfix;
+  .product{
+    position: relative;
+    margin: 10px 0;
+    height: 500px;
+    border: 6px solid;
+    text-align: center;
+    &:nth-child(1){
+      border-color: $default-link-color;
+    }
+    &:nth-child(2){
+      border-color: $black;
+    }
+    &.col2{
+      @include span-columns(6);
+      @include media($mobile) {
+        width: 100%;
+      }
+    }
+    .prod-content{
+      @include both-center;
+      .title{
+        margin: 30px 0 12px 0;
+        color: $proj-title-color;
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.25em;
+      }
+      .des{
+        color: $black;
+        letter-spacing: 1.5px;
+        font-size: .98em;
+        a{
+          color: $black;
+        }
       }
     }
   }
