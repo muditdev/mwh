@@ -1,0 +1,14 @@
+// main-header
+
+header.main-header{
+  @include outer-container;
+  .top-header{
+    position: relative;
+  }
+  .branding{
+  }
+  nav.main-nav{
+    @include v-center();
+    right: 0;
+  }
+}

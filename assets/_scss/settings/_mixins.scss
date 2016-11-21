@@ -1,0 +1,14 @@
+
+
+@mixin v-center($pos: absolute) {
+  position: $pos;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+@mixin both-center($pos: absolute, $top: 50%) {
+  position: $pos;
+  top: $top;
+  left: 50%;
+  @include transform(translate(-50%,-50%));
+}
