@@ -822,6 +822,29 @@ span[class^="Ico-"] {
       .btn--icon-1:hover span.icon svg {
         fill: #566270; }
 
+.btn--icon-2 {
+  background: #888888;
+  min-width: 160px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #fff;
+  -webkit-box-shadow: -2px 2px 0 1px #fd8a80;
+          box-shadow: -2px 2px 0 1px #fd8a80; }
+  .btn--icon-2 span {
+    display: inline-block;
+    vertical-align: middle; }
+    .btn--icon-2 span.icon {
+      width: 30px;
+      padding: 0 4px 0 0; }
+      .btn--icon-2 span.icon svg {
+        fill: #fff; }
+    .btn--icon-2 span.btn-text {
+      letter-spacing: 1.5px; }
+  .btn--icon-2:hover {
+    -webkit-box-shadow: 0 0 2px 0 #fd8a80;
+            box-shadow: 0 0 2px 0 #fd8a80;
+    background: #fd8a80; }
+
 a.link-more {
   text-align: center;
   -webkit-transition: all .5s ease;
@@ -1040,6 +1063,64 @@ nav.main-nav li {
       font-size: .98em; }
       .products .product .prod-content .des a {
         color: #000; }
+
+.newsletter {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px; }
+  .newsletter::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .newsletter figure.thumb {
+    max-width: 100px;
+    margin: auto; }
+    .newsletter figure.thumb svg {
+      width: 100%; }
+  .newsletter .nl-des {
+    font-size: 1.05em;
+    letter-spacing: 1.5px;
+    color: #888888;
+    font-weight: 400; }
+    .newsletter .nl-des span {
+      color: #fd8a80; }
+  .newsletter .nl-input {
+    display: block;
+    width: 320px;
+    margin: 25px auto;
+    position: relative; }
+    .newsletter .nl-input input {
+      display: block;
+      text-align: center;
+      width: 100%;
+      outline: 0;
+      border: none;
+      line-height: 40px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1em;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: #fd8a80;
+      border-bottom: 3px solid rgba(0, 0, 0, 0.25); }
+    .newsletter .nl-input:after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 3px;
+      background: #fd8a80;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      -webkit-transition: all .3s ease-in;
+      transition: all .3s ease-in; }
+    .newsletter .nl-input.active:after {
+      width: 100%; }
 
 header.main-header {
   max-width: 1200px;

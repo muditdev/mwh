@@ -168,3 +168,66 @@ nav.main-nav{
     }
   }
 }
+
+
+// newsletter
+
+.newsletter{
+  @include outer-container(600px);
+  text-align: center;
+  margin-top: 100px;
+  figure.thumb{
+    max-width: 100px;
+    margin: auto;
+    svg{
+      width: 100%;
+    }
+  }
+  .nl-des{
+    font-size: 1.05em;
+    letter-spacing: 1.5px;
+    color: $gray;
+    font-weight: 400;
+    span{
+      color: $orange;
+    }
+  }
+  .nl-input{
+    display: block;
+    width: 320px;
+    margin: 25px auto;
+    position: relative;
+    input{
+      display: block;
+      text-align: center;
+      width: 100%;
+      outline: 0;
+      border: none;
+      line-height: 40px;
+      font-family: $primary-font;
+      font-size: 1em;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: $orange;
+      border-bottom: 3px solid rgba(0,0,0,.25);
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 0%;
+      height: 3px;
+      background: $orange;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all .3s ease-in;
+    }
+    &.active{
+      &:after{
+        width: 100%;
+      }
+    }
+   }
+}

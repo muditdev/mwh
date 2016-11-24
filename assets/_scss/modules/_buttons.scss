@@ -46,6 +46,32 @@
   }
 }
 
+.btn--icon-2{
+  background: $gray;
+  min-width: 160px;
+  border-radius: 30px;
+  color: #fff;
+  box-shadow: -2px 2px 0 1px $orange;
+  span{
+    display: inline-block;
+    vertical-align: middle;
+    &.icon{
+      width: 30px;
+      padding: 0 4px 0 0;
+      svg{
+        fill: #fff;
+      }
+    }
+    &.btn-text{
+      letter-spacing: 1.5px;
+    }
+  }
+  &:hover{
+    box-shadow: 0 0 2px 0 $orange;
+    background: $orange;
+  }
+}
+
 
 a.link-more{
   text-align: center;
