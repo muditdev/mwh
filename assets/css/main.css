@@ -936,6 +936,7 @@ nav.main-nav li {
     width: 100%;
     left: 0;
     top: -75px;
+    line-height: 1;
     font-size: 7em;
     font-weight: 700;
     color: rgba(136, 136, 136, 0.075);
@@ -1082,13 +1083,14 @@ nav.main-nav li {
   .newsletter .nl-des {
     font-size: 1.05em;
     letter-spacing: 1.5px;
-    color: #888888;
+    color: #566270;
     font-weight: 400; }
     .newsletter .nl-des span {
       color: #fd8a80; }
   .newsletter .nl-input {
     display: block;
-    width: 320px;
+    max-width: 320px;
+    width: 95%;
     margin: 25px auto;
     position: relative; }
     .newsletter .nl-input input {
@@ -1139,6 +1141,40 @@ header.main-header {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 0; }
+
+footer.main-footer {
+  margin-top: 135px;
+  text-align: center; }
+  footer.main-footer .thanks {
+    margin-top: 20px; }
+    footer.main-footer .thanks p {
+      max-width: 690px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.125em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 1.8;
+      color: #888888; }
+    footer.main-footer .thanks:before {
+      top: -85px;
+      white-space: nowrap; }
+    footer.main-footer .thanks a {
+      color: #d8cf00; }
+  footer.main-footer .social {
+    margin-top: 50px; }
+    footer.main-footer .social ul li {
+      display: inline-block;
+      margin: 0 15px; }
+      footer.main-footer .social ul li a {
+        color: #566270;
+        font-weight: 600; }
+  footer.main-footer .copy {
+    margin: 20px 0;
+    font-style: italic;
+    font-size: .95em;
+    letter-spacing: .75px;
+    color: #888888; }
 
 header.main-header .top-header {
   padding-top: 10px; }
@@ -1205,6 +1241,9 @@ section.welcome {
   color: #888888;
   letter-spacing: 1px; }
   section.welcome p {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px; }
     section.welcome p a {
       color: #d8cf00; }

@@ -12,3 +12,50 @@ header.main-header{
     right: 0;
   }
 }
+
+//main-footer
+
+footer.main-footer{
+  margin-top: 135px;
+  text-align: center;
+  .thanks{
+    margin-top: 20px;
+    p{
+      max-width: 690px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.125em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 1.8;
+      color: $gray;
+    }
+    &:before{
+      top: -85px;
+      white-space: nowrap;
+    }
+    a{
+      color: $yellow;
+    }
+  }
+  .social{
+    margin-top: 50px;
+    ul{
+      li{
+        display: inline-block;
+        margin: 0 15px;
+        a{
+          color: $dark-blue;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .copy{
+    margin: 20px 0;
+    font-style: italic;
+    font-size: .95em;
+    letter-spacing: .75px;
+    color: $gray;
+  }
+}

@@ -51,11 +51,12 @@ nav.main-nav{
     width: 100%;
     left: 0;
     top: -75px;
+    line-height: 1;
     font: {
       size: 7em;
       weight: 700;
     }
-    color: rgba(#888888, .075);
+    color: rgba($gray, .075);
     z-index: -1;
     @include media($mobile) {
       font-size: 4em;
@@ -186,7 +187,7 @@ nav.main-nav{
   .nl-des{
     font-size: 1.05em;
     letter-spacing: 1.5px;
-    color: $gray;
+    color: $dark-blue;
     font-weight: 400;
     span{
       color: $orange;
@@ -194,7 +195,8 @@ nav.main-nav{
   }
   .nl-input{
     display: block;
-    width: 320px;
+    max-width: 320px;
+    width: 95%;
     margin: 25px auto;
     position: relative;
     input{
