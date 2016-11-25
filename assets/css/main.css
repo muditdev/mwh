@@ -822,6 +822,29 @@ span[class^="Ico-"] {
       .btn--icon-1:hover span.icon svg {
         fill: #566270; }
 
+.btn--icon-2 {
+  background: #888888;
+  min-width: 160px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  color: #fff;
+  -webkit-box-shadow: -2px 2px 0 1px #fd8a80;
+          box-shadow: -2px 2px 0 1px #fd8a80; }
+  .btn--icon-2 span {
+    display: inline-block;
+    vertical-align: middle; }
+    .btn--icon-2 span.icon {
+      width: 30px;
+      padding: 0 4px 0 0; }
+      .btn--icon-2 span.icon svg {
+        fill: #fff; }
+    .btn--icon-2 span.btn-text {
+      letter-spacing: 1.5px; }
+  .btn--icon-2:hover {
+    -webkit-box-shadow: 0 0 2px 0 #fd8a80;
+            box-shadow: 0 0 2px 0 #fd8a80;
+    background: #fd8a80; }
+
 a.link-more {
   text-align: center;
   -webkit-transition: all .5s ease;
@@ -913,6 +936,7 @@ nav.main-nav li {
     width: 100%;
     left: 0;
     top: -75px;
+    line-height: 1;
     font-size: 7em;
     font-weight: 700;
     color: rgba(136, 136, 136, 0.075);
@@ -1041,6 +1065,65 @@ nav.main-nav li {
       .products .product .prod-content .des a {
         color: #000; }
 
+.newsletter {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px; }
+  .newsletter::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .newsletter figure.thumb {
+    max-width: 100px;
+    margin: auto; }
+    .newsletter figure.thumb svg {
+      width: 100%; }
+  .newsletter .nl-des {
+    font-size: 1.05em;
+    letter-spacing: 1.5px;
+    color: #566270;
+    font-weight: 400; }
+    .newsletter .nl-des span {
+      color: #fd8a80; }
+  .newsletter .nl-input {
+    display: block;
+    max-width: 320px;
+    width: 95%;
+    margin: 25px auto;
+    position: relative; }
+    .newsletter .nl-input input {
+      display: block;
+      text-align: center;
+      width: 100%;
+      outline: 0;
+      border: none;
+      line-height: 40px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1em;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      color: #fd8a80;
+      border-bottom: 3px solid rgba(0, 0, 0, 0.25); }
+    .newsletter .nl-input:after {
+      content: '';
+      display: block;
+      width: 0%;
+      height: 3px;
+      background: #fd8a80;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      -webkit-transition: all .3s ease-in;
+      transition: all .3s ease-in; }
+    .newsletter .nl-input.active:after {
+      width: 100%; }
+
 header.main-header {
   max-width: 1200px;
   margin-left: auto;
@@ -1058,6 +1141,40 @@ header.main-header {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 0; }
+
+footer.main-footer {
+  margin-top: 135px;
+  text-align: center; }
+  footer.main-footer .thanks {
+    margin-top: 20px; }
+    footer.main-footer .thanks p {
+      max-width: 690px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.125em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      line-height: 1.8;
+      color: #888888; }
+    footer.main-footer .thanks:before {
+      top: -85px;
+      white-space: nowrap; }
+    footer.main-footer .thanks a {
+      color: #d8cf00; }
+  footer.main-footer .social {
+    margin-top: 50px; }
+    footer.main-footer .social ul li {
+      display: inline-block;
+      margin: 0 15px; }
+      footer.main-footer .social ul li a {
+        color: #566270;
+        font-weight: 600; }
+  footer.main-footer .copy {
+    margin: 20px 0;
+    font-style: italic;
+    font-size: .95em;
+    letter-spacing: .75px;
+    color: #888888; }
 
 header.main-header .top-header {
   padding-top: 10px; }
@@ -1124,6 +1241,9 @@ section.welcome {
   color: #888888;
   letter-spacing: 1px; }
   section.welcome p {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px; }
     section.welcome p a {
       color: #d8cf00; }

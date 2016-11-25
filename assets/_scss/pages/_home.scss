@@ -66,6 +66,9 @@ section.welcome{
   color: $gray;
   letter-spacing: 1px;
   p{
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
     a{
       color: $yellow;

@@ -1,5 +1,6 @@
 $(document).ready(function(){
     projectColor();
+    nlInput();
 });
 
 function projectColor(){
@@ -9,3 +10,14 @@ function projectColor(){
       $projects.eq(i).css('background-color', colors[i]);
     }
   }
+
+function nlInput(){
+  $('.nl-input input').on('focus', function(){
+    $(this).parent('.nl-input').addClass('active');
+  });
+  $('.nl-input input').on('blur', function(){
+    if($(this).val() == ''){
+      $(this).parent('.nl-input').removeClass('active');
+    }
+  });
+}
