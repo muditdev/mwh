@@ -786,8 +786,9 @@ span[class^="Ico-"] {
   transition: all .35s ease; }
 
 .btn--icon-1 {
-  -webkit-box-shadow: 0 0 0 2px #566270 inset;
-          box-shadow: 0 0 0 2px #566270 inset;
+  border: 2px solid #566270;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #566270;
   -webkit-border-radius: 150px;
           border-radius: 150px;
@@ -798,8 +799,13 @@ span[class^="Ico-"] {
   letter-spacing: 1px; }
   .btn--icon-1 span.icon {
     position: absolute;
+    margin: -.2px -1px;
+    padding: 0;
+    display: block;
     left: 0;
     top: 0;
+    height: 52px;
+    width: 52px;
     background: #566270;
     -webkit-border-radius: 50%;
             border-radius: 50%;

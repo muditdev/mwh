@@ -14,7 +14,9 @@
 
 
 .btn--icon-1{
-  box-shadow: 0 0 0 2px $dark-blue inset;
+  // box-shadow: 0 0 0 2px $dark-blue inset;
+  border: 2px solid $dark-blue;
+  box-sizing: border-box;
   color: $dark-blue;
   border-radius: 150px;
   line-height: 50px;
@@ -24,8 +26,12 @@
   letter-spacing: 1px;
   span.icon{
     position: absolute;
+    margin: -.2px -1px;//firefox fix
+    padding: 0;
+    display: block;
     left: 0;
     top: 0;
+    @include size(52px);
     background: $dark-blue;
     border-radius: 50%;
     transition: all .2s ease;
