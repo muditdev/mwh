@@ -744,7 +744,8 @@ template {
 
 body {
   background: white;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -949,8 +950,9 @@ nav.main-nav li {
     z-index: -1; }
     @media screen and (max-width: 600px) {
       .bg-heading:before {
-        font-size: 4em;
-        top: -50px; } }
+        font-size: 2em;
+        top: -50px;
+        overflow: hidden; } }
 
 .projects .project {
   margin: 20px 0;
@@ -1152,7 +1154,8 @@ footer.main-footer {
   margin-top: 135px;
   text-align: center; }
   footer.main-footer .thanks {
-    margin-top: 20px; }
+    margin-top: 20px;
+    padding: 0 10px; }
     footer.main-footer .thanks p {
       max-width: 690px;
       margin-left: auto;
@@ -1265,7 +1268,29 @@ section.proj-container {
     display: block; }
 
 @media screen and (max-width: 600px) {
-  section.home-intro .intro-content {
-    width: 100%; } }
+  header.main-header .top-header {
+    padding: 10px; }
+  header.main-header nav.main-nav {
+    margin-right: 10px; }
+    header.main-header nav.main-nav > ul {
+      display: none; }
+  section.home-intro {
+    padding: 0 20px;
+    margin-top: 50px; }
+    section.home-intro .intro-wrap {
+      position: static;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+    section.home-intro .intro-content {
+      width: 100%;
+      margin-top: 30px;
+      text-align: center; }
+  section.welcome {
+    padding: 20px; }
+  section.proj-container .products {
+    padding: 0 10px; }
+  section.newsletter {
+    padding: 0 10px; } }
 
 /*# sourceMappingURL=main.css.map */

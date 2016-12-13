@@ -6,6 +6,12 @@
   @include transform(translateY(-50%));
 }
 
+@mixin h-center($pos: absolute) {
+  position: $pos;
+  left: 50%;
+  @include transform(translateX(-50%));
+}
+
 @mixin both-center($pos: absolute, $top: 50%) {
   position: $pos;
   top: $top;

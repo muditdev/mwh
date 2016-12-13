@@ -59,8 +59,9 @@ nav.main-nav{
     color: rgba($gray, .075);
     z-index: -1;
     @include media($mobile) {
-      font-size: 4em;
+      font-size: 2em;
       top: -50px;
+      overflow: hidden;
     }
   }
 }

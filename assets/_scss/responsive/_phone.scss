@@ -1,5 +1,42 @@
-  @include media($mobile) {
-    section.home-intro .intro-content{
-        width: 100%;
-      }
+@include media($mobile) {
+ header.main-header{
+  .top-header{
+    padding: 10px;
+  }
+  nav.main-nav{
+    & > ul{
+     display: none;
     }
+    margin-right: 10px;
+  }
+}// header.main-header ends
+
+section.home-intro{
+  padding: 0 20px;
+  margin-top: 50px;
+  .intro-wrap{
+    position: static;
+    @include transform(none);
+  }
+  .intro-content{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    }
+  }
+
+  main.main-content{
+
+  }
+  section.welcome{
+    padding: 20px;
+  }
+  section.proj-container{
+    .products{
+      padding: 0 10px;
+    }
+  }
+  section.newsletter{
+    padding: 0 10px;
+  }
+}//media ends
