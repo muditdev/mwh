@@ -1,6 +1,6 @@
 header.main-header{
   .top-header{
-    padding-top: 10px;
+    padding: 10px 10px 0;
   }
 }
 
@@ -10,6 +10,7 @@ section.home-intro{
   position: relative;
   .intro-wrap{
     width: 100%;
+    padding: $c-pad;
     @include outer-container(720px);
     @include both-center(absolute,45%);
   }
@@ -59,6 +60,7 @@ main.main-content{
 
 }
 section.welcome{
+  padding: 0 $c-pad;
   font:{
     weight: 600;
     size: 1.05em;

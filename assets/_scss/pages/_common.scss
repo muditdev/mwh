@@ -1,8 +1,12 @@
 // main-header
 
 header.main-header{
-  @include outer-container;
+  background-image: url(../images/topo_bg.jpg);
+  // background-size: contain;
+  background-position: center center;
+  margin-bottom: 50px;
   .top-header{
+    @include outer-container;
     position: relative;
   }
   .branding{
@@ -20,7 +24,7 @@ footer.main-footer{
   text-align: center;
   .thanks{
     margin-top: 20px;
-    padding: 0 10px;
+    padding: 0 $c-pad;
     p{
       max-width: 690px;
       margin-left: auto;
@@ -32,7 +36,6 @@ footer.main-footer{
       color: $gray;
     }
     &:before{
-      top: -85px;
       white-space: nowrap;
     }
     a{
@@ -48,12 +51,13 @@ footer.main-footer{
         a{
           color: $dark-blue;
           font-weight: 600;
+          line-height: 1.85;
         }
       }
     }
   }
   .copy{
-    margin: 20px 0;
+    padding: 20px 0;
     font-style: italic;
     font-size: .95em;
     letter-spacing: .75px;

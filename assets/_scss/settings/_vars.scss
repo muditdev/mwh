@@ -3,6 +3,7 @@ $primary-font: 'Josefin Sans', sans-serif;
 
 // breakpoint
 $mobile: new-breakpoint(max-width 600px);
+$mobile-l: new-breakpoint(max-width 737px);
 
 // sizes
 $header-padding: 0px;
@@ -26,3 +27,6 @@ $proj-title-color: $black;
 
 $default-icons-size : 50px;
 $default-icon-fill : $dark-blue;
+
+// pad
+$c-pad: 15px;
