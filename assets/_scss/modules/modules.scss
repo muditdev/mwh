@@ -10,6 +10,11 @@
   overflow: hidden;
 }
 
+// main content
+main.main-content{
+  margin-top: 100px;
+}
+
 // navigation
 nav.main-nav{
   li{
@@ -51,8 +56,8 @@ nav.main-nav{
     width: 100vw;
     overflow: hidden;
     left: 0;
-    top: -75px;
-    line-height: 1.5;
+    top: -75%;
+    line-height: 1;
     font: {
       size: 7em;
       weight: 700;
@@ -80,7 +85,9 @@ nav.main-nav{
     @include row;
     text-align: center;
     // height: 500px;
-    background: $projColor1;
+    opacity: .2;
+    background-color: $white;
+    @include transition(all 1s);
     .col{
       height: 500px;
       position: relative;
@@ -177,6 +184,84 @@ nav.main-nav{
         a{
           color: $black;
         }
+      }
+    }
+  }
+}
+
+
+//services
+
+.services{
+  .service{
+    margin: 20px 0;
+    width: 100%;
+    @include row;
+    text-align: center;
+    opacity: .2;
+    background-color: $white;
+    @include transition(all 1s);
+    &.col2{
+      height: 500px;
+      @include span-columns(6);
+      @include media($mobile) {
+        width: 100%;
+      }
+    }
+    .col{
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+      @include span-columns(6);
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+    }
+
+    .ser-des{
+      @include both-center();
+      width: 75%;
+      max-width: 375px;
+      min-width: 285px;
+      h3.title{
+        a{
+          color: $proj-title-color;
+        }
+        font-weight: 700;
+        letter-spacing: 1px;
+        font-size: 1.25em;
+        margin: 0 0 20px 0;
+      }
+      .des{
+        color: $black;
+        letter-spacing: 1.5px;
+        font-size: .98em;
+        a{
+          color: $black;
+        }
+      }
+
+    }
+    .ser-img{
+      max-width: 300px;
+      width: 80%;
+      @include both-center();
+      overflow: hidden;
+      img{
+        max-width: 100%;
+      }
+    }
+    // if col2 is on
+    .ser-content{
+      text-align: center;
+      @include v-center(relative);
+      .ser-img, .ser-des{
+        position: static;
+        @include transform(none);
+        margin: 15px auto;
+      }
+      .ser-img{
+        max-width: 150px
       }
     }
   }
