@@ -1,4 +1,5 @@
 @import "buttons";
+@import "headings";
 
 // logo
 .logo{
@@ -159,6 +160,19 @@ nav.main-nav{
       @include span-columns(6);
       @include media($mobile) {
         width: 100%;
+      }
+    }
+    &.col3{
+      @include span-columns(4);
+      @include media($tablet) {
+        @include span-columns(6);
+        @include omega(2n);
+        &:last-child{
+          @include span-columns(12);
+        }
+      }
+      @include media($mobile) {
+        @include span-columns(12);
       }
     }
     .prod-content{
