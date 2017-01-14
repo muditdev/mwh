@@ -22,7 +22,7 @@
 			c0,5.926-3.276,11.367-8.514,14.14L9,6.235V28H-9V5.938l-14.845-8.35C-28.882-5.246-32-10.578-32-16.357V-32"/>
 		<path fill="#FFFFFF" stroke="#898989" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M13-1
 			c0-4.971-5.82-13-13-13S-13-5.971-13-1s5.82,9,13,9S13,3.971,13-1z"/>
-		<polyline fill="#FFFFFF" stroke="#898989" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" points="9,-2 9,0 
+		<polyline fill="#FFFFFF" stroke="#898989" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" points="9,-2 9,0
 			9,28 -9,28 -9,-2 -9,0 		"/>
 	</g>
 	<polygon fill="none" points="45,40 -45,40 -45,-40 45,-40 	"/>
@@ -224,17 +224,17 @@
 <symbol  id="head-common_x5F_white-shade" viewBox="-39 -55 78 110">
 	<g>
 		<defs>
-			<path id="SVGID_3_" d="M17.6-38.8l-8-6c-5.689-4.267-13.511-4.267-19.2,0l-8,6C-26.665-32.001-32-21.331-32-10v30
-				c0,17.673,14.327,32,32,32l0,0c17.673,0,32-14.327,32-32v-30C32-21.331,26.665-32.001,17.6-38.8z"/>
+			<path id="SVGID_3_" d="M17.6-38.8l-8-6c-5.688-4.268-13.511-4.268-19.2,0l-8,6C-26.665-32.001-32-21.331-32-10v30
+				c0,17.673,14.327,32,32,32l0,0c17.674,0,32-14.327,32-32v-30C32-21.331,26.665-32.001,17.6-38.8z"/>
 		</defs>
 		<use xlink:href="#SVGID_3_"  overflow="visible" fill="#FFFFFF"/>
 		<clipPath id="SVGID_4_">
 			<use xlink:href="#SVGID_3_"  overflow="visible"/>
 		</clipPath>
-		<path opacity="0.2" clip-path="url(#SVGID_4_)" fill="#888888" d="M24.29-10.582l-0.659-2.085C22.065-17.627,17.463-21,12.261-21
-			H11.96c-2.656,0-5.169,0.978-7.332,2.521C3.323-17.548,1.726-17,0-17s-3.323-0.548-4.628-1.479C-6.791-20.022-9.304-21-11.96-21
-			h-0.301c-5.202,0-9.804,3.373-11.37,8.333l-0.659,2.085C-25.903-5.473-30.643-2-36-2l0,0v-50h15h42h15v50l0,0
-			C30.643-2,25.903-5.473,24.29-10.582z"/>
+		<path opacity="0.2" clip-path="url(#SVGID_4_)" fill="#888888" d="M36-2L36-2l-8.877-30.853L1.027-53.063l-15.416,8.16
+			l-11.306,9.421L-36-2l0,0c5.357,0,10.097-3.473,11.71-8.582l0.659-2.085C-22.065-17.628-17.463-21-12.261-21h0.301
+			c2.656,0,5.169,0.978,7.332,2.521C-3.323-17.548-1.726-17,0-17c1.727,0,3.322-0.548,4.628-1.479C6.791-20.022,9.304-21,11.96-21
+			h0.302c5.201,0,9.803,3.372,11.369,8.333l0.659,2.085C25.903-5.473,30.643-2,36-2z"/>
 		<use xlink:href="#SVGID_3_"  overflow="visible" fill="none" stroke="#898989" stroke-width="4" stroke-miterlimit="10"/>
 	</g>
 	<polygon fill="none" points="39,-55 -39,-55 -39,55 39,55 	"/>
@@ -244,68 +244,69 @@
 		C-1.229,3.265,1.229,3.265,2,4.998L2,4.998z"/>
 </symbol>
 <g>
-	
-		<use xlink:href="#ears-m-normal-white"  width="102" height="31" x="-51" y="-16" transform="matrix(0.5578 0 0 -0.5578 50.1025 48.292)" overflow="visible"/>
-	
-		<use xlink:href="#Body-woman.neckless-midle-black-white"  width="90" height="80" x="-45" y="-40" transform="matrix(0.5963 0 0 -0.5963 50.1992 80.9131)" overflow="visible"/>
-	
-		<use xlink:href="#head-common_x5F_white-shade"  width="78" height="110" x="-39" y="-55" transform="matrix(0.5963 0 0 -0.5963 50.1992 44.9385)" overflow="visible"/>
-	
-		<use xlink:href="#eyes-man-normal"  width="52" height="18" x="-26" y="-9" transform="matrix(0.5963 0 0 -0.5963 50.7949 44.3955)" overflow="visible"/>
-	
-		<use xlink:href="#eyebrows-normal-s"  width="46" height="10" x="-23" y="-5" transform="matrix(0.5963 0 0 -0.5963 50.2764 35.1538)" overflow="visible"/>
-	
-		<use xlink:href="#glasses-01-normal"  width="70" height="26" x="-35" y="-13" transform="matrix(0.5963 0 0 -0.5963 50.1992 43.7998)" overflow="visible"/>
-	
-		<use xlink:href="#mouth-12-woman.normal"  width="20" height="9" id="XMLID_2_" x="-10" y="-4.002" transform="matrix(0.5963 0 0 -0.5265 50.4092 61.4824)" overflow="visible"/>
+
+		<use xlink:href="#ears-m-normal-white"  width="102" height="31" x="-51" y="-16" transform="matrix(0.5632 0 0 -0.5632 49.9375 47.2163)" overflow="visible"/>
+
+		<use xlink:href="#Body-woman.neckless-midle-black-white"  width="90" height="80" x="-45" y="-40" transform="matrix(0.6021 0 0 -0.6021 49.8398 80.1523)" overflow="visible"/>
+
+		<use xlink:href="#head-common_x5F_white-shade"  width="78" height="110" id="XMLID_1_" x="-39" y="-55" transform="matrix(0.6021 0 0 -0.6021 49.8398 43.8315)" overflow="visible"/>
+
+		<use xlink:href="#eyes-man-normal"  width="52" height="18" x="-26" y="-9" transform="matrix(0.6021 0 0 -0.6021 50.4414 43.2827)" overflow="visible"/>
+
+		<use xlink:href="#eyebrows-normal-s"  width="46" height="10" x="-23" y="-5" transform="matrix(0.6021 0 0 -0.6021 49.916 33.9521)" overflow="visible"/>
+
+		<use xlink:href="#glasses-01-normal"  width="70" height="26" x="-35" y="-13" transform="matrix(0.6021 0 0 -0.6021 49.8398 42.6812)" overflow="visible"/>
+
+		<use xlink:href="#mouth-12-woman.normal"  width="20" height="9" id="XMLID_2_" x="-10" y="-4.002" transform="matrix(0.6021 0 0 -0.5316 50.0498 60.5332)" overflow="visible"/>
 	<g>
 		<g>
-			<path fill="none" stroke="#898989" stroke-width="0.6241" stroke-miterlimit="10" d="M48.487,49.167
-				c-1.081,0.538-1.789,1.339-1.789,2.352c0,0.475,1.71,0.63,1.71,0.63c0.525,0.72,0.675,2.385,2.464,2.385
-				c1.752,0,1.938-1.665,2.464-2.385c0,0,1.71-0.155,1.71-0.63c0-1.013-0.708-1.813-1.789-2.352"/>
+			<path fill="none" stroke="#898989" stroke-width="0.6301" stroke-miterlimit="10" d="M48.11,48.1
+				c-1.091,0.544-1.808,1.352-1.808,2.374c0,0.481,1.728,0.637,1.728,0.637c0.529,0.729,0.681,2.409,2.488,2.409
+				c1.769,0,1.958-1.681,2.487-2.409c0,0,1.727-0.156,1.727-0.637c0-1.022-0.716-1.83-1.808-2.374"/>
 		</g>
-		<path opacity="0.4" fill="none" stroke="#898989" stroke-width="0.6241" stroke-miterlimit="10" d="M50.872,42.606"/>
-		<path opacity="0.4" fill="none" stroke="#898989" stroke-width="0.6241" stroke-miterlimit="10" d="M50.872,50.955"/>
+		<path opacity="0.4" fill="none" stroke="#898989" stroke-width="0.6301" stroke-miterlimit="10" d="M50.519,41.477"/>
+		<path opacity="0.4" fill="none" stroke="#898989" stroke-width="0.6301" stroke-miterlimit="10" d="M50.519,49.905"/>
 	</g>
 	<g>
-		<path fill="#ADACAC" stroke="#888888" stroke-width="0.312" stroke-miterlimit="10" d="M51.708,67.052h-2.221
-			c-1.013,0-1.764-0.141-1.671-0.316l1.054-2.711c0.022-0.129,0.376,0.299,1.166,0.299l1.47,0.088c0.708,0.05,0.82-0.601,1.11-0.259
-			l1.06,2.544C53.73,66.886,52.811,67.052,51.708,67.052z"/>
+		<path fill="#ADACAC" stroke="#888888" stroke-width="0.315" stroke-miterlimit="10" d="M51.361,66.159H49.12
+			c-1.022,0-1.781-0.144-1.688-0.321l1.064-2.736c0.023-0.13,0.38,0.302,1.177,0.302l1.484,0.088c0.715,0.05,0.827-0.605,1.12-0.261
+			l1.071,2.57C53.404,65.99,52.477,66.159,51.361,66.159z"/>
 	</g>
 	<g>
 		<g>
 			<g>
-				<rect x="19.12" y="39.024" fill="none" width="61.965" height="43.026"/>
+				<rect x="18.46" y="37.859" fill="none" width="62.563" height="43.441"/>
 			</g>
 			<g>
-				<path fill="#ADACAC" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M68.835,55.713
-					c-0.248-2.592,0.714-4.877,0.591-5.774c-0.098-0.716-0.117-1.218-0.104-1.655c0.022-0.765,0.815-3.242,0.33-2.694
-					c-0.304,0.342-1.559,2.877-1.601,3.385c-0.071,0.836-0.149,1.71-0.278,2.291c-0.476,2.16-2.568,6.511-4.759,7.975
-					c-1.594,1.064-2.207,3.623-5.964,4.818c-1.405,0.445-4.231,3.223-6.337,3.223c-1.56,0-4.161-1.825-5.357-2.162
-					c-3.847-1.082-4.665-4.587-6.336-5.703c-2.189-1.464-4.476-4.795-4.952-6.954c-0.127-0.582-0.207-1.458-0.278-2.294
-					c-0.042-0.509-2.37-3.527-2.673-3.87c-0.484-0.547,0.784,1.818,0.807,2.582c0.014,0.437-0.006,0.938-0.103,1.652
-					c-0.13,0.955,0.323,3.569,0.194,6.46c-0.286,6.439,5.5,11.969,10.171,15.869l1.447,2.023c0.92,0.768,5.826,2.255,6.983,2.255
-					l4.841-1.057c1.207,0,2.376-0.465,3.316-1.296l0.844-1.226C64.34,69.395,69.47,62.329,68.835,55.713z"/>
+				<path fill="#ADACAC" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M68.655,54.71
+					c-0.251-2.616,0.721-4.926,0.596-5.831c-0.1-0.723-0.118-1.229-0.105-1.671c0.023-0.772,0.823-3.274,0.334-2.721
+					c-0.306,0.346-1.574,2.905-1.615,3.418c-0.072,0.843-0.151,1.726-0.281,2.313c-0.481,2.182-2.595,6.576-4.804,8.051
+					c-1.609,1.075-2.229,3.658-6.021,4.863c-1.42,0.452-4.273,3.257-6.398,3.257c-1.576,0-4.202-1.844-5.41-2.184
+					c-3.884-1.093-4.71-4.631-6.396-5.759c-2.211-1.479-4.519-4.841-5.001-7.021c-0.128-0.586-0.209-1.472-0.28-2.316
+					c-0.042-0.514-2.392-3.561-2.698-3.906c-0.489-0.553,0.791,1.836,0.813,2.607c0.015,0.441-0.005,0.947-0.104,1.668
+					c-0.133,0.963,0.326,3.606,0.196,6.523c-0.289,6.501,5.553,12.084,10.27,16.021l1.461,2.043c0.93,0.776,5.883,2.277,7.051,2.277
+					l4.888-1.067c1.217,0,2.4-0.471,3.347-1.307l0.854-1.237C64.115,68.524,69.296,61.391,68.655,54.71z"/>
 			</g>
 		</g>
 		<g>
 			<g>
 				<g>
 					<g>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M63.161,69.493c0-2.11,0-3.2,0-5.308"/>
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M62.925,68.623c0-2.13,0-3.231,0-5.358"
+							/>
 					</g>
 				</g>
 				<g>
 					<g>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M60.584,72.387c0-2.108,0-3.574,0-5.684"
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M60.322,71.544c0-2.129,0-3.608,0-5.737"
 							/>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M57.953,74.799c0-2.107,0-5.022,0-7.13"
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M57.667,73.979c0-2.129,0-5.069,0-7.198"
 							/>
 					</g>
 					<g>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M55.427,76.246c0-2.704,0-5.725,0-7.236"
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M55.116,75.441c0-2.731,0-5.779,0-7.307"
 							/>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M51.988,76.729c0-2.108,0-4.646,0-6.755"
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M51.646,75.928c0-2.129,0-4.689,0-6.818"
 							/>
 					</g>
 				</g>
@@ -313,29 +314,27 @@
 			<g>
 				<g>
 					<g>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M49.41,76.729c0-2.108,0-4.646,0-6.755"
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M49.042,75.928c0-2.129,0-4.689,0-6.818"
 							/>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M46.402,76.246c0-2.108,0-5.128,0-7.236"
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M46.006,75.441c0-2.129,0-5.177,0-7.307"
 							/>
 					</g>
 					<g>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M43.445,74.316c0-2.107,0-4.54,0-6.647"
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M43.02,73.493c0-2.129,0-4.583,0-6.712"
 							/>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M40.814,72.263c0-2.107,0-3.45,0-5.56"/>
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M40.363,71.42c0-2.129,0-3.484,0-5.613"
+							/>
 					</g>
 				</g>
 				<g>
 					<g>
-						<path fill="none" stroke="#888888" stroke-width="0.6241" stroke-miterlimit="10" d="M38.236,69.01c0-2.108,0-2.717,0-4.824"
-							/>
+						<path fill="none" stroke="#888888" stroke-width="0.6301" stroke-miterlimit="10" d="M37.76,68.135c0-2.129,0-2.743,0-4.87"/>
 					</g>
 				</g>
 			</g>
 		</g>
 	</g>
-	
-		<use xlink:href="#facial.hair-052-black"  width="112" height="76" x="-56" y="-38" transform="matrix(0.416 0 0 -0.416 50.7949 63.4238)" overflow="visible"/>
-	
-		<use xlink:href="#hair-normal-043-black"  width="148" height="166" x="-74" y="-83" transform="matrix(0.5963 0 0 -0.5963 50.3594 40.8125)" overflow="visible"/>
+		<use xlink:href="#facial.hair-052-black"  width="112" height="76" x="-56" y="-38" transform="matrix(0.42 0 0 -0.42 50.4414 62.4961)" overflow="visible"/>
+		<use xlink:href="#hair-normal-043-black"  width="148" height="166" x="-74" y="-83" transform="matrix(0.6021 0 0 -0.6021 50 39.665)" overflow="visible"/>
 </g>
 </svg>
