@@ -88,11 +88,21 @@
   padding: 15px 17px;
   // height: 48px;
   // line-height: 48px;
+  &.sl{
+    width: 350px;
+    max-width: 95%;
+  }
+  &.c-dark{
+    color: $black;
+    &:after{
+      background: $black;
+    }
+  }
   &:after{
     content: '';
     display: block;
     height: 3px;
-    width: 50%;
+    width: 30%;
     background: $btn-yellow;
     position: absolute;
     left: 50%;
