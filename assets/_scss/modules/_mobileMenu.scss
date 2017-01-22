@@ -72,7 +72,7 @@
     header.mn-header{
       background-color: $mnColor;
       position: relative;
-      height: 35vh;
+      height: 40vh;
       .mn-image{
         max-width: 100%;
         height: 100%;
@@ -100,7 +100,7 @@
         a{
           display: block;
           text-align: center;
-          line-height: 60px;
+          line-height: 10vh;
           display: none;
           color: rgba($black, .75);
           font-size: 1.14em;
