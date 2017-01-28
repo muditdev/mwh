@@ -7,7 +7,9 @@ $(document).ready(function(){
 });
 
 
-
+function scrollTotop(){
+  window.scrollTo(0, 0);
+}
 
 function nlInput(){
   $('.nl-input input').on('focus', function(){
