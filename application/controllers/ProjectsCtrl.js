@@ -2,6 +2,4 @@ myApp.controller('ProjectsCtrl', ['$scope','$rootScope', function($scope, $rootS
   var vm = this;
   $rootScope.currPage = 'projects';
   console.log('ProjectsCtrl')
-
-  
 }])
