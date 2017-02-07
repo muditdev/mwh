@@ -20,28 +20,36 @@
 
 
 <section class="blogPosts-container">
-  <article class="blogPost">
+  <!-- ng-repeat -->
+  <article class="blogPost" ng-repeat="post in BlogCtrl.posts">
     <div class="post-meta">
-      <span class="date">January 2017</span>
+      <span class="date" ng-bind="post.shortdate"></span>
       <span class="dot"></span>
-      <a class="category">Work</a>
+      <a class="category" ng-bind="post.category">Work</a>
     </div>
 
     <div class="post-content">
-      <h1 class="post-title">Need Lorem Ipsum? Inside HTML?</h1>
-      <div class="post-excerpt">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi arc.
-      </div>
+      <h1 class="post-title" ng-bind="post.title"></h1>
+      <div class="post-excerpt" ng-bind-html="(post.excerpt | renderHTML)" ></div>
     </div>
 
     <div class="post-actions">
-      <a class="read">
-        <svg>
-          <use xlink:href="/assets/svg/sprite.svg#readIco" />
-        </svg>
+      <a class="read" href="{(post.url)}">
+        <span class="Ico-read">
+          <svg>
+            <use xlink:href="/assets/svg/sprite.svg#readIco" />
+          </svg>
+        </span>
       </a>
-      <a class="love">Love</a>
-    </div>
 
+      <a class="love">
+        <span class="Ico-love">
+          <svg>
+            <use xlink:href="/assets/svg/sprite.svg#loveIco" />
+          </svg>
+        </span>
+      </a>
+    </div>
   </article>
+
 </section>
