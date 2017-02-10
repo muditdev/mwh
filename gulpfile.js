@@ -4,6 +4,9 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var sourcemaps = require('gulp-sourcemaps');
+var ngAnnotate = require('gulp-ng-annotate');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -39,6 +42,45 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     });
 });
 
+
+
+/**
+ * js tasks
+*/
+
+// gulp.task('js', function () {
+//   gulp.src([
+//     'application/app.js',
+//     'application/controllers/*.js'
+//   ])
+//     .pipe(concat('application/application.js'))
+//     .pipe(uglify())
+//     .pipe(gulp.dest('.'));
+//
+// })
+
+gulp.task('js', function() {
+    var source = [
+      'application/app.js',
+      'application/config.js',
+      'application/services/*.js',
+      'application/controllers/*.js'
+    ];
+    return gulp.src(source)
+        .pipe(sourcemaps.init())
+        .pipe(concat('application/application.js', {newLine: ';'}))
+        // Annotate before uglify so the code get's min'd properly.
+        .pipe(ngAnnotate({
+            // true helps add where @ngInject is not used. It infers.
+            // Doesn't work with resolve, so we must be explicit there
+            add: true
+        }))
+        .pipe(uglify({mangle: true}))
+        .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest('.'));
+});
+
+
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
@@ -60,11 +102,13 @@ gulp.task('sass', function () {
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
-gulp.task('watch', function () {
+gulp.task('watch', ['js'], function () {
     gulp.watch('assets/_scss/**/*.*', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html','_includes/*.html','_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html','views/*.html','_includes/*.html','_posts/*'], ['jekyll-rebuild']);
     //js files
-    gulp.watch('application/**/*.js', ['jekyll-rebuild']);
+    gulp.watch(['application/app.js','application/services/*.js', 'application/controllers/*.js'] , ['js']);
+    gulp.watch('application/*.js', ['jekyll-rebuild']);
+    // gulp.watch('application/**/*.js', ['jekyll-rebuild']);
     // svgs
     gulp.watch('assets/svg/sprite.svg', ['jekyll-rebuild']);
 });
