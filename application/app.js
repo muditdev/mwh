@@ -4,7 +4,7 @@ var myApp = angular.module('mwhApp', ['ngRoute', 'ngSanitize'], function($interp
   })
 
 
-myApp.run(function ($rootScope, $location) {
+myApp.run(function ($rootScope, $location, $route) {
   $rootScope.$on("$routeChangeStart", function (event) {
     // scrolling to top on changing routes starts
       window.scrollTo(0, 0);

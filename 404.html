@@ -3,9 +3,7 @@ layout: mwh
 title: Mudit Jain | designer, developer, thinker
 ---
 <header class="main-header" ng-class="{subpg : !isHome}">
-
-  <ng-include src="'/views/includes/topHeader.html'"></ng-include>
-
+  {% include topHeader.html %}
   <section class="home-intro" data-ng-if="isHome"><!--home intro starts -->
     <div class="intro-wrap">
       <figure class="myAvtar">
@@ -31,10 +29,10 @@ title: Mudit Jain | designer, developer, thinker
   </section><!--home intro ends -->
 </header>
 
+<div ng-view ></div>
 
 <main class="main-content">
   <!-- main view -->
-  <div ng-view ></div>
   <!-- main view -->
 </main>
 

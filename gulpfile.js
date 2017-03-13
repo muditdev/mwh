@@ -8,6 +8,10 @@ var ngAnnotate = require('gulp-ng-annotate');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 
+
+var historyApiFallback = require('connect-history-api-fallback');
+
+
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -35,7 +39,8 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
-            baseDir: '_site'
+            baseDir: '_site',
+            middleware: [ historyApiFallback() ]
         },
         // port: 8081,
         notify: false

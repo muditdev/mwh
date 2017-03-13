@@ -17,11 +17,22 @@ myApp.config(['$routeProvider','$locationProvider','$httpProvider',function($rou
             templateUrl: 'views/products.html',
             controller: 'ProductsCtrl as ProductsCtrl'
       })
-      .when('/blog', {
+      .when('/blogs', {
             templateUrl: 'views/blog.html',
             controller: 'BlogCtrl as BlogCtrl'
       })
+      .when('/posts/:postname', {
+            templateUrl: 'views/post.html',
+            controller: 'PostCtrl as PostCtrl'
+      })
       .otherwise({
             redirectTo: '/'
+      });
+
+      // use the HTML5 History API for # url fix
+      $locationProvider.html5Mode({
+        enabled : true,
+        requireBase : true,
+        rewriteLinks : true
       });
 }]);
