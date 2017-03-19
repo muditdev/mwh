@@ -12,8 +12,7 @@ myApp.controller('BlogCtrl', ['$scope','$rootScope', 'blogServices', 'postServic
   vm.gotopost = function(postData){
     // console.log(postData); 
     postService.setpost(postData);
-    $location.path(postData.url);
-
+    $location.path("blog/"+ postData.postUrl);
   }
 
 }])

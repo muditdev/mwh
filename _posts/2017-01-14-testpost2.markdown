@@ -3,6 +3,7 @@ layout: post
 title:  "testPost 2!"
 date:   2017-01-14 09:11:03
 categories: Designer_Life
+postUrl: testpost2
 
 ---
 

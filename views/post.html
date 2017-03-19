@@ -1,15 +1,12 @@
 
 <!-- PostCtrl -->
-<section class="blogPosts-container">
-  <!-- ng-repeat -->
-  <article class="blogPost">
-    <!-- inner post
-    {(PostCtrl.mypost)} -->
+<ng-include src="'/views/includes/postsHeader.html'"></ng-include>
 
 
-    <div class="" ng-bind-html="(PostCtrl.mypost.content | renderHTML)">
+<section class="post-container">
 
-    </div>
+  <article class="post-content">
+    <div class="" ng-bind-html="(PostCtrl.mypost.content | renderHTML)"></div>
   </article>
 
 </section>

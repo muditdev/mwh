@@ -4,7 +4,7 @@ var myApp = angular.module('mwhApp', ['ngRoute', 'ngSanitize'], function($interp
   })
 
 
-myApp.run(function ($rootScope, $location, $route) {
+myApp.run(function ($rootScope, $location, $route, $timeout) {
   $rootScope.$on("$routeChangeStart", function (event) {
     // scrolling to top on changing routes starts
       window.scrollTo(0, 0);
@@ -21,6 +21,12 @@ myApp.run(function ($rootScope, $location, $route) {
       // code if user not in home page
       $rootScope.isHome = false;
     }
+  });
+
+  $rootScope.$on('$viewContentLoaded', function(){
+    $timeout(function(){
+      layoutDone();
+    }, 1000)
   });
 })
 

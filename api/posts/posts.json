@@ -8,6 +8,7 @@
             "categories"   : "{{ post.categories }}",
             "tags"       : "{{ post.tags | join: ', ' }}",
             "url"        : "{{ post.url }}",
+            "postUrl"    : "{{ post.postUrl }}",
             "path"       : "{{ post.path }}",
             "next"       : "{{ post.next.url }}",
             "previous"   : "{{ post.previous.url }}",

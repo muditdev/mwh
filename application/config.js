@@ -21,7 +21,7 @@ myApp.config(['$routeProvider','$locationProvider','$httpProvider',function($rou
             templateUrl: 'views/blog.html',
             controller: 'BlogCtrl as BlogCtrl'
       })
-      .when('/posts/:postname', {
+      .when('/blog/:postname', {
             templateUrl: 'views/post.html',
             controller: 'PostCtrl as PostCtrl'
       })

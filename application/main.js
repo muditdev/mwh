@@ -3,10 +3,16 @@ $(document).ready(function(){
     blocksBg();
     // setting background over scroll
     $(window).scroll(blocksBg);
-    mobileNav();
+    // setTimeout(function() {
+    //       mobileNav();
+
+    // }, 2000)
 });
 
 
+var layoutDone = function(){
+    mobileNav();
+}
 
 
 function nlInput(){
