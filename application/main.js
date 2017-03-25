@@ -8,11 +8,18 @@ $(document).ready(function(){
     // }, 2000)
 });
 
+function showLoader(){
+  if(!$('body').hasClass('isLoading')){
+    $('body').addClass('isLoading');
+    $('.mwh-loader').show();
+  }
+}
 function hideLoader(dur){
   if(dur == undefined){
     dur = 500;
   }
   $('.mwh-loader').fadeOut(dur)
+  $('body').removeClass('isLoading');
 }
 
 var layoutDone = function(){

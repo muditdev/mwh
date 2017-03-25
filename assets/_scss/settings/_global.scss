@@ -6,6 +6,9 @@ body {
     background: white;
     font-family: $primary-font;
     overflow-x: hidden;
+    &.isLoading{
+      overflow: hidden;
+    }
 }
 a{
   text-decoration: none;

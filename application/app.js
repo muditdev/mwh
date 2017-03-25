@@ -6,8 +6,12 @@ var myApp = angular.module('mwhApp', ['ngRoute', 'ngSanitize'], function($interp
 
 myApp.run(function ($rootScope, $location, $route, $timeout) {
   $rootScope.$on("$routeChangeStart", function (event) {
+    // showing loader on route changes
+    showLoader();
+    // showing loader on route changes ends
+
     // scrolling to top on changing routes starts
-      window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
     // scrolling to top on changing routes ends
 
 
