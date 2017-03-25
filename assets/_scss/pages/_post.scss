@@ -62,34 +62,40 @@ header.main-header.postpgHeader{
 		margin: 15px 0;
 	}
 	blockquote{
-		background: rgba($black, .9);
+		background-color: rgba($black, .9);
 		max-width: 600px;
-		margin: 30px auto;
+		margin: 70px auto;
 		color: #fff;
 		border-radius: 5px;
 		padding: 25px;
 		position: relative;
 		font-size: 1.125em;
 		line-height: 1.5;
-		overflow: hidden;
+		@include box-shadow(7px 8px 20px 0px rgba(0, 0, 0, 0.25));
 		a{
 			color: $yellow;
 		}
-		// &:before{
-		// 	content: '"';
-		// 	font-size: 10em;
-		// 	color: $yellow;
-		// 	position: absolute;
-		// 	top: -30px;
-		// 	left: 0;
-		// }
-		// &:after{
-		// 	content: '"';
-		// 	font-size: 10em;
-		// 	color: $yellow;
-		// 	position: absolute;
-		// 	bottom: -30px;
-		// 	right: 0;
-		// }
+		&:before{
+			content: '';
+			display: block;
+			background: url(../svg/quote.svg) no-repeat center center;
+			@include size(50px);
+			top: 0;
+			left: 0;
+			background-size: 50px;
+			position: absolute;
+			@include transform(translate(-50%, -65%));
+		}
+		&:after{
+			content: '';
+			display: block;
+			background: url(../svg/quote.svg) no-repeat center center;
+			bottom: 0;
+			right: 0;
+			@include size(50px);
+			background-size: 50px;
+			position: absolute;
+			@include transform(translate(50%, 65%) rotate(180deg));
+		}
 	}
  }

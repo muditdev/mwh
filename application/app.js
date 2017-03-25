@@ -25,7 +25,11 @@ myApp.run(function ($rootScope, $location, $route, $timeout) {
 
   $rootScope.$on('$viewContentLoaded', function(){
     $timeout(function(){
+      mobilenavunbind();
+      console.log('unbinded');
       layoutDone();
+      console.log('loaded')
+      hideLoader();
     }, 1000)
   });
 })

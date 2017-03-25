@@ -5,10 +5,15 @@ $(document).ready(function(){
     $(window).scroll(blocksBg);
     // setTimeout(function() {
     //       mobileNav();
-
     // }, 2000)
 });
 
+function hideLoader(dur){
+  if(dur == undefined){
+    dur = 500;
+  }
+  $('.mwh-loader').fadeOut(dur)
+}
 
 var layoutDone = function(){
     mobileNav();
@@ -52,6 +57,9 @@ function blocksBg() {
   }
 }//blocksBg function ends
 
+function mobilenavunbind(){
+  $( ".trigger" ).unbind();
+}
 
 function mobileNav(){
   $(".trigger").click(function() {
