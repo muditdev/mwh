@@ -10,6 +10,9 @@ body {
       overflow: hidden;
     }
 }
+// ::-webkit-scrollbar {
+//     display: none;
+// }
 a{
   text-decoration: none;
   color: $default-link-color;

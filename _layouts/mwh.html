@@ -5,7 +5,7 @@ layout: compress
 <!DOCTYPE html>
 <html ng-app="mwhApp" ng-strict-di>
     {% include head.html %}
-    <body ng-controller="MainCtrl" class="">
+    <body ng-controller="MainCtrl as MainCtrl" class="">
       <!-- loader starts -->
       <div class="mwh-loader bgani">
         <div class="loader-content">
@@ -18,7 +18,6 @@ layout: compress
         </div>
       </div>
       <!-- loader ends -->
-      
       <div class="mobileNavWrap">
         <div class="mobileNav-content">
           <header class="mn-header">

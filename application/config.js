@@ -25,6 +25,11 @@ myApp.config(['$routeProvider','$locationProvider','$httpProvider',function($rou
             templateUrl: 'views/post.html',
             controller: 'PostCtrl as PostCtrl'
       })
+      //projects
+      .when('/projects/desenostudio', {
+            templateUrl: 'views/projects/deseno.html',
+            controller: 'ProjCtrl as ProjCtrl'
+      })
       .otherwise({
             redirectTo: '/'
       });

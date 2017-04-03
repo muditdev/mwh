@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    showLoader();
     nlInput();
     blocksBg();
     // setting background over scroll
@@ -18,8 +19,10 @@ function hideLoader(dur){
   if(dur == undefined){
     dur = 500;
   }
-  $('.mwh-loader').fadeOut(dur)
-  $('body').removeClass('isLoading');
+  $('.mwh-loader').fadeOut(dur);
+  setTimeout(function(){
+    $('body').removeClass('isLoading');
+  }, 500);
 }
 
 var layoutDone = function(){
