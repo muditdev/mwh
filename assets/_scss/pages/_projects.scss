@@ -3,3 +3,30 @@ main.projectsPg{
     padding: 0 10px;
   }
 }
+
+// Indivisual projects
+
+.projInner{
+  .container{
+    @include outer-container(1200px);
+  }
+  header.proj-header{
+    // this bg color will be dynamic
+    background-color: #34495e;
+    padding: 50px 0;
+    .proj-head{
+      color: $white;
+      text-align: center;
+      h1{
+        font-size: 2.5em;
+        letter-spacing: 1px;
+        line-height: 1.5;
+      }
+      a{
+        color: $white;
+        font-weight: 600;
+        letter-spacing: .5px;
+      }
+    }
+  }
+}

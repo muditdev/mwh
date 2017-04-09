@@ -3,4 +3,6 @@ myApp.controller('ProjCtrl', ['$scope','$rootScope','$location' , function($scop
 
   console.log('ProjCtrl as ProjCtrl');
 
+  
+
 }]);

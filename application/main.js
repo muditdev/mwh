@@ -8,7 +8,11 @@ $(document).ready(function(){
     //       mobileNav();
     // }, 2000)
 });
+var layoutDone = function(){
+    mobileNav();
+}
 
+// loader code -----
 function showLoader(){
   if(!$('body').hasClass('isLoading')){
     $('body').addClass('isLoading');
@@ -25,11 +29,6 @@ function hideLoader(dur){
   }, 500);
 }
 
-var layoutDone = function(){
-    mobileNav();
-}
-
-
 function nlInput(){
   $('.nl-input input').on('focus', function(){
     $(this).parent('.nl-input').addClass('active');
@@ -40,7 +39,6 @@ function nlInput(){
     }
   });
 }
-
 
 //project product and service block background -------------------
 function blocksBg() {

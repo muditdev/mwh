@@ -4104,6 +4104,30 @@ section.serv-container {
 main.projectsPg .products {
   padding: 0 10px; }
 
+.projInner .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+  .projInner .container::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.projInner header.proj-header {
+  background-color: #34495e;
+  padding: 50px 0; }
+  .projInner header.proj-header .proj-head {
+    color: #fff;
+    text-align: center; }
+    .projInner header.proj-header .proj-head h1 {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      line-height: 1.5; }
+    .projInner header.proj-header .proj-head a {
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: .5px; }
+
 header.blog-header {
   text-align: center;
   padding: 10px 15px;
