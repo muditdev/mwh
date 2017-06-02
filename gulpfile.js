@@ -46,7 +46,7 @@ gulp.task('reload', function () {
 gulp.task('browser-sync', ['sass'], function() {
     browserSync({
         server: {
-            // baseDir: '',
+            baseDir: './',
             middleware: [ historyApiFallback() ]
         },
         // port: 8081,

@@ -4128,6 +4128,29 @@ main.projectsPg .products {
       font-weight: 600;
       letter-spacing: .5px; }
 
+.projInner .proj-mock {
+  background: url(/assets/svg/air_frame.svg) no-repeat center center;
+  background-size: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto; }
+  .projInner .proj-mock::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 600px) {
+    .projInner .proj-mock {
+      max-width: 320px; } }
+  .projInner .proj-mock img {
+    width: 100%;
+    padding: 7% 13.5% 10%; }
+    @media screen and (max-width: 600px) {
+      .projInner .proj-mock img {
+        width: 320px;
+        padding: 27px 43px 34px; } }
+
 header.blog-header {
   text-align: center;
   padding: 10px 15px;
