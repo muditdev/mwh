@@ -12,34 +12,41 @@ var uglify = require('gulp-uglify');
 var historyApiFallback = require('connect-history-api-fallback');
 
 
-var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-var messages = {
-    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
-};
+// var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
+// var messages = {
+//     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+// };
 
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll-build', function (done) {
-    // browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
-        .on('close', done);
-});
+// gulp.task('jekyll-build', function (done) {
+//     // browserSync.notify(messages.jekyllBuild);
+//     return cp.spawn( jekyll , ['build'], {stdio: 'inherit'})
+//         .on('close', done);
+// });
 
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+// gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+//     browserSync.reload();
+// });
+
+/**
+ *  page reload
+ */
+gulp.task('reload', function () {
     browserSync.reload();
 });
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['sass'], function() {
     browserSync({
         server: {
-            baseDir: '_site',
+            // baseDir: '',
             middleware: [ historyApiFallback() ]
         },
         // port: 8081,
@@ -109,13 +116,13 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', ['js'], function () {
     gulp.watch('assets/_scss/**/*.*', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html','views/*.html', 'views/projects/*.html','_includes/*.html','_posts/*', 'views/includes/*.html'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_layouts/*.html','views/*.html', 'views/projects/*.html','_includes/*.html','_posts/*', 'views/includes/*.html'], ['reload']);
     //js files
     gulp.watch(['application/app.js','application/services/*.js', 'application/controllers/*.js'] , ['js']);
-    gulp.watch('application/*.js', ['jekyll-rebuild']);
+    gulp.watch('application/*.js', ['reload']);
     // gulp.watch('application/**/*.js', ['jekyll-rebuild']);
     // svgs
-    gulp.watch('assets/svg/sprite.svg', ['jekyll-rebuild']);
+    gulp.watch('assets/svg/sprite.svg', ['reload']);
 });
 
 /**
