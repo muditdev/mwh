@@ -148,6 +148,18 @@ a.link-more{
   }
 }
 
+.btn-behance{
+  color: $behance;
+  &:after{
+    background: $behance;
+  }
+}
+.btn-deseno{
+  color: $deseno-color;
+  &:after{
+    background: $deseno-color;
+  }
+}
 
 @keyframes rotation {
     0% {transform: scale(1)}
