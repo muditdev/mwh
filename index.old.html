@@ -1,13 +1,119 @@
----
-layout: default
-title: Your New Jekyll Site
----
+<!DOCTYPE html>
+<html ng-app="mwhApp">
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Your New Jekyll Site</title>
+  <!-- # usl fix -->
+  <base href="/">
+  <!-- # usl fix -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/brand/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/brand/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/brand/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/brand/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/brand/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/brand/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/brand/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/brand/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/brand/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/brand/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/brand/favicon-16x16.png">
+  <link rel="manifest" href="/assets/brand/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/assets/brand/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-<div id="home">
+  <!-- Development CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <!-- / Development CSS -->
+
+  <!-- production CSS -->
+  <!-- <link rel="stylesheet" href="/assets/css/main.min.css"> -->
+  <!-- / production CSS -->
+
+  <!-- development lib js -->
+  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+  <!-- / development lib js -->
+
+  <!-- production lib js -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> -->
+  <!-- / production lib js -->
+  <script type="text/javascript">
+     // Single Page Apps for GitHub Pages
+     // https://github.com/rafrex/spa-github-pages
+     // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+     // ----------------------------------------------------------------------
+     // This script checks to see if a redirect is present in the query string
+     // and converts it back into the correct url and adds it to the
+     // browser's history using window.history.replaceState(...),
+     // which won't cause the browser to attempt to load the new url.
+     // When the single page app is loaded further down in this file,
+     // the correct url will be waiting in the browser's history for
+     // the single page app to route accordingly.
+     (function(l) {
+       if (l.search) {
+         var q = {};
+         l.search.slice(1).split('&').forEach(function(v) {
+           var a = v.split('=');
+           q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+         });
+         if (q.p !== undefined) {
+           window.history.replaceState(null, null,
+             l.pathname.slice(0, -1) + (q.p || '') +
+             (q.q ? ('?' + q.q) : '') +
+             l.hash
+           );
+         }
+       }
+     }(window.location))
+   </script>
+   <!-- End Single Page Apps for GitHub Pages -->
+
+</head>
+
+    <body ng-controller="MainCtrl">
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+          {( name )}
+          
+          <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+    
+      <li><span>14 Jan 2017</span> &raquo; <a href="/posts/testpost2">testPost 2!</a></li>
+    
+      <li><span>20 Apr 2016</span> &raquo; <a href="/posts/jekyll-with-gulp">How to setup development environment for jekyll with browser sync</a></li>
+    
   </ul>
 </div>
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name is<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+    <script type="text/javascript" src="/application/app.js"></script>
+    <script type="text/javascript" src="/application/main.js"></script>
+    </body>
+</html>

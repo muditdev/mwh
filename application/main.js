@@ -14,10 +14,11 @@ var layoutDone = function(){
 
 // loader code -----
 function showLoader(){
-  if(!$('body').hasClass('isLoading')){
-    $('body').addClass('isLoading');
-    $('.mwh-loader').show();
-  }
+  //enable it when dev mode has done
+  // if(!$('body').hasClass('isLoading')){
+  //   $('body').addClass('isLoading');
+  //   $('.mwh-loader').show();
+  // }
 }
 function hideLoader(dur){
   if(dur == undefined){

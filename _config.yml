@@ -1,6 +1,0 @@
-name: Your New Jekyll Site
-markdown: kramdown
-highlighter: rouge
-exclude: ["node_modules", "gulpfile.js", "package.json", "products", "projects", "services"]
-baseurl: /
-permalink: posts/:title
