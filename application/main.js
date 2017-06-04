@@ -14,7 +14,7 @@ var layoutDone = function(){
 
 // loader code -----
 function showLoader(){
-  //enable it when dev mode has done
+  //enable it when dev mode has done  
   // if(!$('body').hasClass('isLoading')){
   //   $('body').addClass('isLoading');
   //   $('.mwh-loader').show();

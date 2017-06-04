@@ -4163,7 +4163,11 @@ main.projectsPg .products {
 
 .projInner .proj-details {
   padding: 0 15px;
-  margin-top: 60px; }
+  margin-top: 60px;
+  font-weight: 400;
+  color: #888888;
+  font-size: 1.05em;
+  letter-spacing: .05em; }
   .projInner .proj-details::after {
     clear: both;
     content: "";
@@ -4201,6 +4205,25 @@ main.projectsPg .products {
         border: 0; }
         .projInner .proj-details .col2:last-child {
           margin-right: 0; } }
+  .projInner .proj-details .proj--des h2 {
+    color: #566270;
+    font-size: 1.85em; }
+    .projInner .proj-details .proj--des h2 small {
+      font-size: .575em;
+      font-weight: 300;
+      color: #888888;
+      font-style: italic; }
+    .projInner .proj-details .proj--des h2:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 30px;
+      background: #566270;
+      margin-top: 15px; }
+  .projInner .proj-details h3 {
+    font-size: 1.4em;
+    color: #566270;
+    margin: 20px 0 10px; }
 
 header.blog-header {
   text-align: center;
