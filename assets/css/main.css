@@ -4193,7 +4193,7 @@ main.projectsPg .products {
     margin-right: 2.35765%;
     width: 31.76157%;
     border-left: 2px solid #e7e7e7;
-    padding: 0 0 15px 15px; }
+    padding: 10px 0 25px 25px; }
     .projInner .proj-details .col2:last-child {
       margin-right: 0; }
     @media screen and (max-width: 600px) {
@@ -4224,6 +4224,16 @@ main.projectsPg .products {
     font-size: 1.4em;
     color: #566270;
     margin: 20px 0 10px; }
+  .projInner .proj-details .proj--links {
+    margin-top: 20px; }
+    .projInner .proj-details .proj--links .btn-3.sl {
+      width: 300px;
+      padding: 13px 0; }
+    .projInner .proj-details .proj--links a {
+      margin-right: 15px; }
+  .projInner .proj-details .proj--roles p,
+  .projInner .proj-details .proj--tools p {
+    line-height: 1.5; }
 
 header.blog-header {
   text-align: center;

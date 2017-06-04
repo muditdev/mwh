@@ -63,7 +63,7 @@ main.projectsPg {
     .col2 {
       @include span-columns(4);
       border-left: 2px solid #e7e7e7;
-      padding: 0 0 15px 15px;
+      padding: 10px 0 25px 25px;
       @include media($mobile) {
         @include span-columns(12);
         border: 0;
@@ -88,10 +88,26 @@ main.projectsPg {
         }
       }
     }
-    h3{
+    h3 {
       font-size: 1.4em;
       color: $dark-blue;
       margin: 20px 0 10px;
+    }
+    .proj--links {
+      margin-top: 20px;
+      .btn-3.sl {
+        width: 300px;
+        padding: 13px 0;
+      }
+      a {
+        margin-right: 15px;
+      }
+    }
+    .proj--roles,
+    .proj--tools {
+      p {
+        line-height: 1.5;
+      }
     }
   }
 }
