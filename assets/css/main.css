@@ -3456,6 +3456,23 @@ section.welcome {
     -ms-transform: translateX(0);
     transform: translateX(0); }
 
+.masonry {
+  -webkit-column-gap: 1em;
+     -moz-column-gap: 1em;
+          column-gap: 1em; }
+  .masonry.col-4 {
+    -webkit-column-count: 4;
+       -moz-column-count: 4;
+            column-count: 4; }
+  .masonry.col-3 {
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; }
+  .masonry .item {
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%; }
+
 .logo {
   background: #fffcb6;
   -webkit-border-radius: 50%;
@@ -4234,6 +4251,9 @@ main.projectsPg .products {
   .projInner .proj-details .proj--roles p,
   .projInner .proj-details .proj--tools p {
     line-height: 1.5; }
+
+.projInner .proj-content {
+  margin-top: 100px; }
 
 header.blog-header {
   text-align: center;
