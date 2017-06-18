@@ -3468,6 +3468,16 @@ section.welcome {
     -webkit-column-count: 3;
        -moz-column-count: 3;
             column-count: 3; }
+  @media screen and (max-width: 737px) {
+    .masonry {
+      -webkit-column-count: 2 !important;
+         -moz-column-count: 2 !important;
+              column-count: 2 !important; } }
+  @media screen and (max-width: 600px) {
+    .masonry {
+      -webkit-column-count: 1 !important;
+         -moz-column-count: 1 !important;
+              column-count: 1 !important; } }
   .masonry .item {
     display: inline-block;
     margin: 0 0 1em;
@@ -4254,6 +4264,9 @@ main.projectsPg .products {
 
 .projInner .proj-content {
   margin-top: 100px; }
+  .projInner .proj-content .artflow .design img {
+    width: 100%;
+    height: auto; }
 
 header.blog-header {
   text-align: center;
