@@ -112,7 +112,11 @@ main.projectsPg {
   } // project content ----------------------------
   .proj-content {
     margin-top: 100px;
-    .flow-title {}
+    .flow-title {
+      text-align: center;
+      font-size: 4em;
+      color: rgba($gray, .125);
+    }
     .artflow {
       .design{
         img{

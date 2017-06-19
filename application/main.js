@@ -10,6 +10,7 @@ $(document).ready(function(){
 });
 var layoutDone = function(){
     mobileNav();
+    nlInput();
 }
 
 // loader code -----

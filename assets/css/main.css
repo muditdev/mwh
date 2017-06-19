@@ -4264,6 +4264,10 @@ main.projectsPg .products {
 
 .projInner .proj-content {
   margin-top: 100px; }
+  .projInner .proj-content .flow-title {
+    text-align: center;
+    font-size: 4em;
+    color: rgba(136, 136, 136, 0.125); }
   .projInner .proj-content .artflow .design img {
     width: 100%;
     height: auto; }
