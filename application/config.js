@@ -30,6 +30,10 @@ myApp.config(['$routeProvider','$locationProvider','$httpProvider',function($rou
             templateUrl: 'views/projects/deseno.html',
             controller: 'ProjCtrl as ProjCtrl'
       })
+      .when('/projects/mypanditg', {
+            templateUrl: 'views/projects/mypanditg.html',
+            controller: 'ProjCtrl as ProjCtrl'
+      })
       .otherwise({
             redirectTo: '/'
       });
