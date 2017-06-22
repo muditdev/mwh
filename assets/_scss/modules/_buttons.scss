@@ -157,7 +157,7 @@ a.link-more{
 .btn-deseno{
   color: $deseno-color;
   &:after{
-    background: $deseno-color;
+    background: currentColor;
   }
 }
 

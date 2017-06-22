@@ -3152,6 +3152,10 @@ span[class^="Ico-"] {
 .mt100 {
   margin-top: 100px; }
 
+.imgRes {
+  width: 100%;
+  height: auto; }
+
 .btn {
   display: inline-block;
   background: transparent;
@@ -3299,7 +3303,7 @@ a.link-more {
 .btn-deseno {
   color: #314e55; }
   .btn-deseno:after {
-    background: #314e55; }
+    background: currentColor; }
 
 @-webkit-keyframes rotation {
   0% {
@@ -4187,6 +4191,13 @@ main.projectsPg .products {
     @media screen and (max-width: 600px) {
       .projInner .proj-mock img {
         padding: 27px 43px 34px; } }
+  .projInner .proj-mock.nobg {
+    background: none;
+    text-align: center; }
+    .projInner .proj-mock.nobg img {
+      max-width: 100%;
+      width: auto;
+      padding: 0; }
 
 .projInner .proj-details {
   padding: 0 15px;

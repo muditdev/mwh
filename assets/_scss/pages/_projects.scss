@@ -45,6 +45,16 @@ main.projectsPg {
         padding: 27px 43px 34px;
       }
     }
+
+    &.nobg{
+      background: none;
+      text-align: center;
+      img{
+        max-width: 100%;
+        width: auto;
+        padding: 0;
+      }
+    }
   }
   .proj-details {
     @include clearfix;

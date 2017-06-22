@@ -34,6 +34,14 @@ myApp.config(['$routeProvider','$locationProvider','$httpProvider',function($rou
             templateUrl: 'views/projects/mypanditg.html',
             controller: 'ProjCtrl as ProjCtrl'
       })
+      .when('/projects/muditjaintheme', {
+            templateUrl: 'views/projects/muditjain.html',
+            controller: 'ProjCtrl as ProjCtrl'
+      })
+      .when('/projects/starbucks', {
+            templateUrl: 'views/projects/starbucksapp.html',
+            controller: 'ProjCtrl as ProjCtrl'
+      })
       .otherwise({
             redirectTo: '/'
       });
