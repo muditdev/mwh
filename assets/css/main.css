@@ -3550,6 +3550,11 @@ nav.main-nav li {
         font-size: 2em;
         top: -50px; } }
 
+.projshadow {
+  -webkit-box-shadow: 0 0 35px rgba(0, 0, 0, 0.09);
+  -ms-box-shadow: 0 0 35px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.09); }
+
 .projects .project {
   margin: 20px 0;
   width: 100%;

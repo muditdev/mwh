@@ -82,6 +82,9 @@ nav.main-nav{
   }
 }
 
+.projshadow{
+  @include box-shadow(0 0 35px rgba(0, 0, 0, 0.09));
+}
 
 //projects
 
