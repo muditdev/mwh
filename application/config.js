@@ -42,6 +42,14 @@ myApp.config(['$routeProvider','$locationProvider','$httpProvider',function($rou
             templateUrl: 'views/projects/starbucksapp.html',
             controller: 'ProjCtrl as ProjCtrl'
       })
+      .when('/projects/ecommerceLanding', {
+            templateUrl: 'views/projects/ecommerceLanding.html',
+            controller: 'ProjCtrl as ProjCtrl'
+      })
+      .when('/projects/nowpay', {
+            templateUrl: 'views/projects/nowpay.html',
+            controller: 'ProjCtrl as ProjCtrl'
+      })
       .otherwise({
             redirectTo: '/'
       });

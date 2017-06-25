@@ -61,7 +61,8 @@ function blocksBg() {
               'background-color': bgColor,
               'opacity' : 1
             });
-          }, i*400);
+          }, i*0);
+          // 400
         }//if statement ends
       });//each event ends
   }
