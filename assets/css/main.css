@@ -3330,6 +3330,9 @@ a.link-more {
     -webkit-transform: scale(1);
             transform: scale(1); } }
 
+.btn-reqPort {
+  padding: 15px 30px; }
+
 section.welcome {
   padding: 0 15px;
   font-weight: 600;
@@ -4068,6 +4071,20 @@ footer.main-footer {
     font-size: .95em;
     letter-spacing: .75px;
     color: #888888; }
+
+.requestPortfolio {
+  background: white;
+  border: 1px solid #fd8a80;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 100px rgba(253, 138, 128, 0.29);
+          box-shadow: 0 0 100px rgba(253, 138, 128, 0.29);
+  -webkit-border-radius: 29px;
+          border-radius: 29px;
+  margin: 100px auto; }
+  .requestPortfolio .nl-des {
+    font-weight: 600; }
+  .requestPortfolio .thumb {
+    max-width: 125px !important; }
 
 header.main-header .top-header {
   padding: 10px 10px 0; }
