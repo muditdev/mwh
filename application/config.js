@@ -54,6 +54,10 @@ myApp.config(['$routeProvider','$locationProvider','$httpProvider',function($rou
             templateUrl: 'views/projects/notch.html',
             controller: 'ProjCtrl as ProjCtrl'
       })
+      .when('/projects/amchamindia', {
+            templateUrl: 'views/projects/amchamindia.html',
+            controller: 'ProjCtrl as ProjCtrl'
+      })
       .otherwise({
             redirectTo: '/'
       });
