@@ -157,7 +157,7 @@ a.link-more{
 .btn-deseno{
   color: $deseno-color;
   &:after{
-    background: $deseno-color;
+    background: currentColor;
   }
 }
 
@@ -165,4 +165,8 @@ a.link-more{
     0% {transform: scale(1)}
     50% {transform: scale(1.08)}
   100%{transform: scale(1)}
+}
+
+.btn-reqPort{
+  padding: 15px 30px; 
 }
